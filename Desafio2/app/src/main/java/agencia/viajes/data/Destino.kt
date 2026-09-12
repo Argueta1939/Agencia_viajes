@@ -6,5 +6,5 @@ data class Destino(
     val pais: String = "",
     val precio: Double = 0.0,
     val descripcion: String = "",
-    val imagenUrl: String = ""   // ahora guardará ruta local, no URL
+    val imagenUrl: String = ""   // Ahora almacena ruta local del archivo, no URL http
 )

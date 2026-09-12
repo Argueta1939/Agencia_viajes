@@ -12,7 +12,7 @@ class LocalStorageRepository(private val context: Context) {
         get() = File(context.filesDir, "destinos").apply { if (!exists()) mkdirs() }
 
     /**
-     * Copia la imagen seleccionada a almacenamiento interno de la app.
+     * Copia la imagen seleccionada al almacenamiento interno privado de la app.
      * @return ruta absoluta del archivo guardado, o null si falla.
      */
     fun saveImage(uri: Uri): String? {
